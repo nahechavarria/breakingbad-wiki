@@ -1,0 +1,36 @@
+.photo {
+	animation: skeleton-animation 0.5s infinite alternate;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	min-width: 300px;
+	max-width: 1fr;
+	height: 550px;
+	background: grey;
+}
+.division {
+	display: flex;
+	justify-content: space-between;
+}
+.shortline {
+	animation: skeleton-animation 0.5s infinite alternate;
+	border-radius: 50px;
+	width: 5rem;
+	height: 1rem;
+	margin: 3%;
+	background: grey;
+}
+.fullline {
+	animation: skeleton-animation 0.5s infinite alternate;
+	width: 94%;
+	height: 1.5rem;
+	margin: 3%;
+	background: grey;
+}
+@keyframes skeleton-animation {
+	0% {
+		background: rgb(198, 187, 187);
+	}
+	100% {
+		background: rgb(155, 141, 141);
+	}
+}
