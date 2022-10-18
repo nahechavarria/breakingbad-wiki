@@ -4,6 +4,7 @@ import { Error } from './Error';
 
 import { useCharacters } from '../hooks/useCharacters';
 import { CharacterCard } from './CharacterCard';
+import { SkeletonLoader } from './SkeletonLoader';
 import './MainPage.css';
 
 export const MainPage = () => {
@@ -32,8 +33,8 @@ export const MainPage = () => {
 					<div className="container">
 						{Array(9)
 							.fill(0)
-							.map(() => (
-								<p>Loading...</p>
+							.map((value, index) => (
+								<SkeletonLoader key={index} />
 							))}
 					</div>
 				) : characters && characters.length > 0 ? (
